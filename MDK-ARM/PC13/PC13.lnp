@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"pc13\stm32l0xx_it.o"
+"pc13\stm32l0xx_hal_msp.o"
+"pc13\usart.o"
+"pc13\gpio.o"
+"pc13\main.o"
+"pc13\user_standby.o"
+"pc13\stm32l0xx_hal_i2c_ex.o"
+"pc13\stm32l0xx_hal_rcc_ex.o"
+"pc13\stm32l0xx_hal.o"
+"pc13\stm32l0xx_hal_gpio.o"
+"pc13\stm32l0xx_hal_i2c.o"
+"pc13\stm32l0xx_hal_flash_ramfunc.o"
+"pc13\stm32l0xx_hal_rcc.o"
+"pc13\stm32l0xx_hal_pwr.o"
+"pc13\stm32l0xx_hal_dma.o"
+"pc13\stm32l0xx_hal_uart_ex.o"
+"pc13\stm32l0xx_hal_pwr_ex.o"
+"pc13\stm32l0xx_hal_flash.o"
+"pc13\stm32l0xx_hal_cortex.o"
+"pc13\stm32l0xx_hal_uart.o"
+"pc13\stm32l0xx_hal_flash_ex.o"
+"pc13\startup_stm32l072xx.o"
+"pc13\system_stm32l0xx.o"
+--library_type=microlib --strict --scatter "PC13\PC13.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PC13.map" -o PC13\PC13.axf
